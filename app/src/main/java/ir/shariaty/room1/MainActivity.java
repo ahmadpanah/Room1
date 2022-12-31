@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     List<MainData> dataList = new ArrayList<>();
     LinearLayoutManager linearLayoutManager;
     RoomDB database;
+    MainAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

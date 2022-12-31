@@ -27,4 +27,8 @@ public interface MainDao {
     //Update Query
     @Query("UPDATE contact SET text = :sText WHERE ID = :sID")
     void update(int sID, String sText);
+
+    //Get All Data Query
+    @Query("SELECT * FROM contact")
+    List<MainData> getAll();
 }
